@@ -1,0 +1,7 @@
+{
+  "name": "footballLegends",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

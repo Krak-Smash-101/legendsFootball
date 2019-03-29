@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar color="danger" text-center>
+    <ion-title>
+        <ion-icon name="home" (click)='goToHome()'></ion-icon>
+        Legends of the Game
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding> 
+
+  <!--button ion-button medium round color="light" (click)='getAllPlayers()'>Show Legends</button>-->
+  <button ion-button medium round outline color="dark" (click)='reset()'>Reset Page</button>
+
+  <ion-list *ngFor='let player of players | async'>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>{{player.firstName}} {{player.lastName}} 
+            <img src='{{player.photoURL}}'>
+            <h2><b>Statistics</b></h2>
+          </ion-card-title>
+        </ion-card-header>      
+        <ion-card-content>            
+            <ion-item> 
+              <img src='../../assets/imgs/football1.jpg' class="ball">             
+              <h2>Nationality: {{player.nationality}}</h2>
+              <h3>Position: {{player.position}}</h3>
+              <h5>Age: {{player.age}}</h5>
+            </ion-item>
+            
+          <p>Player Description: "He's a legend."
+          That phrase used to mean something. "Legend" used to be reserved only for the special few 
+          who truly earned the status. Nowadays, it feels like it's thrown around to anyone. 
+          Apparently, there are legends everywhere.</p>
+        </ion-card-content>
+      </ion-card>
+  </ion-list>
+
+</ion-content>
