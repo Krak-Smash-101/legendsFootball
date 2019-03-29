@@ -1,35 +1,30 @@
 page-landing {
 
-    /*.logo{
-        width: 12vh;
-    }*/
+    .logo{
+        width: 28vh;
+        //height: 30vh;
+        margin-top: -15%;
+    }
 
     #main{
         margin-bottom: 10px;
         margin-top: 10px;
     }
 
-    .container{
-        //margin-bottom: 20%;
-        width: 100%;
-        //clear: both;
+    .container{        
+        width: 100%;       
     }  
 
     #footer{
         background-color: rgb(39, 38, 38);
-        padding: 1em;
-        size: 50px;
-        //padding-top: 20em;
-        //margin-top: 25%;
-        //clear: both;
-        //position: fixed;
+        padding: 1em;       
 
         p{
             color: #e0cece;
             //color: #fff;
             text-align: center; 
             font-size: 10px;
-            line-height: -4.5em;
+            //line-height: -4.5em;
             span{
                 font-size: 8px;
             }          
