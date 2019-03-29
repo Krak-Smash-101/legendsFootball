@@ -5,19 +5,33 @@
 </ion-header>
 
 <ion-content padding>
+  
+  <!--img src='../../assets/imgs/football2.jpg' class="logo">-->  
 
-  <ion-list text-center>
+  <div id="main">
+      <ion-list text-center>
 
-    <img src='../../assets/imgs/football2.jpg' class="logo">
+          <div class="container">
+              <img src='../../assets/imgs/legendsBan1.jpg'>    
+          </div>  
 
-    <h1>Legends</h1>
-    <p style="align-content: center">Welcome to the Football Legends App. An App designed to browse and view some of history's 
-      greatest players of the beautiful game.
-    </p>
+          <p style="align-content: center">Welcome to the Football Legends App. 
+            An App designed to browse and view some of history's greatest 
+            players of the beautiful game. Click the button to view the Legends!
+          </p>   
+      
+          <button ion-button block color="danger" id="btnMove" (click)='goToPlayerList()'>Show Legends</button>                    
 
-
-  </ion-list>  
-
-  <button ion-button block round color="danger" class="btn" id="btnMove" (click)='goToPlayerList()'>Show Legends</button>
-
+      </ion-list> 
+  </div>  
+  
 </ion-content>
+
+<ion-footer id="footer">
+    <p class="pTxt"><b>Legends App - 4th Year API RESTful Web Service</b></p>
+    <p>EAD2-CA2 [Elapsed] Lecturer: Gary Clynch</p>
+    <br>
+    <p><b>Developers:</b></p>
+    <p>Bren Dempsey & Alex Grant</p>
+    <p><span>&copy;2019 Dempsey & Grant </span></p>
+</ion-footer>

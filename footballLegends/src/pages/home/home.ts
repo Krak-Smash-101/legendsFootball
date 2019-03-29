@@ -27,20 +27,8 @@ export class HomePage {
       console.log(response);       
     });   
   }
- 
-  /*getAllPlayers(){
-    this.players = this.httpClient.get("https://footballlegends.azurewebsites.net/api/CA2Service/all");
-    this.players.subscribe((response) => {      
-      console.log(response);       
-    });    
-  }*/
 
   goToHome(){
-    this.navCtrl.setRoot(LandingPage);
-  }
-
-  reset(){
-    //this.players as {};
     this.navCtrl.setRoot(LandingPage);
   }
  
