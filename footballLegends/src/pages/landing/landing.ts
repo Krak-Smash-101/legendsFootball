@@ -7,13 +7,14 @@ import { HomePage } from '../home/home';
   selector: 'page-landing',
   templateUrl: 'landing.html',
 })
+
 export class LandingPage { 
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+  //Function to go to home page
   goToPlayerList(){   
-    //this.navCtrl.push(HomePage, {player: player});            
     this.navCtrl.setRoot(HomePage);            
   } 
 
